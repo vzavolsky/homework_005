@@ -59,21 +59,21 @@ public class Main {
     public static void task_05() {
         byte monthNumber = 4;
         String season = "";
-        switch (monthNumber) {
-            case 12:
-            case 1:
-            case 2: season = "Зима"; break;
-            case 3:
-            case 4:
-            case 5: season = "Весна"; break;
-            case 6:
-            case 7:
-            case 8:season = "Лето"; break;
-            case 9:
-            case 10:
-            case 11: season = "Осень"; break;
-            default: break;
-        }
+        if (monthNumber < 13)
+            switch (monthNumber) {
+                case 12:
+                case 1:
+                case 2: season = "Зима"; break;
+                case 3:
+                case 4:
+                case 5: season = "Весна"; break;
+                case 6:
+                case 7:
+                case 8:season = "Лето"; break;
+                case 9:
+                case 10:
+                case 11: season = "Осень"; break;
+            }
         System.out.println(season);
     }
 }
